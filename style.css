@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* --- Configurações Gerais --- */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* --- Configurações do Cabeçalho --- */
+
+#container-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);  /* Fundo semi-transparente */
+    color: white;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+#menu ul li {
+    margin-right: 30px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: none;
+    /* Color da paleta de cores */
+}
+
+#inscricao #inscreva-se {
+    padding: 12px 24px;
+    /* Background color da paleta de cores */
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#inscricao #inscreva-se:hover {
+    color: none;
+    /* Background color da paleta de cores */
+}
+
+/* --- Configurações do Conteúdo Principal --- */
+
+/* Configuração da Apresentação */
+
+#container-conteudo #apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 80px 50px; /* Ajuste para não cobrir o cabeçalho */
+    background: url('img/4k-tech-2k2jzc0qemh7y38n.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Efeito de sombra no texto */
+}
+
+#container-conteudo #apresentacao #texto {
+    margin-left: 50px;
+}
+
+#container-conteudo #apresentacao #texto h1 {
+    margin-bottom: 20px;
+    font: normal bold 20px arial, sans-serif;
+}
