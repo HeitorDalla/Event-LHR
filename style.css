@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/* --- Variável para armazenar a peleta de cores do site --- */
+
+:root {
+    --corFundos: #003B46;
+    --barraNavegacao: #002F6C;
+    --fundosSec: #4A646C;
+    --textosLeg: #D9E0E2;
+    --linkButton: #FFC857; 
+}
+
 /* --- Configurações Gerais --- */
 
 * {
@@ -89,7 +99,7 @@ body {
     background: url('img/4k-tech-2k2jzc0qemh7y38n.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    color: var(--textosLeg);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Efeito de sombra no texto */
 }
 
@@ -100,4 +110,102 @@ body {
 #container-conteudo #apresentacao #texto h1 {
     margin-bottom: 20px;
     font: normal bold 20px arial, sans-serif;
+}
+
+/* Configuração das Informações */
+
+#container-conteudo #informacoes {
+    height: 50vh;
+    background-color: var(--corFundos);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textosLeg);
+}
+
+#container-conteudo #logo {
+    /* Configuração da imagem */
+}
+
+#container-conteudo #informacoes #texto {
+    /* Configuração de texto dentro do container informação */
+}
+
+/* --- Configuração dos Palestrantes --- */
+
+#container-conteudo #palestrantes {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: black;
+}
+
+.palestrante {
+    width: 280px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.cardPai {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.palestrante:hover .cardPai {
+    transform: rotateY(180deg);
+}
+
+/* Frente do card */
+
+.cardFilho, .cardFilho2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    background-color: var(--barraNavegacao);
+    color: var(--textosLeg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cardFilho img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cardFilho h2 {
+    font-size: 18px;
+    color: var(--linkButton);
+}
+
+/* Verso do card */
+.cardFilho2 {
+    transform: rotateY(180deg);
+    background-color: var(--fundosSec);
+    color: var(--textosLeg);
+}
+
+.cardFilho2 i {
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.cardFilho2 p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
 }
