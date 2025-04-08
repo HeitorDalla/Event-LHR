@@ -8,9 +8,6 @@
     --fundosSec: #4A646C;
     --textosLeg: #D9E0E2;
     --linkButton: #FFC857;
-
-    --fontMenu: 'Barlow Condensed', sans-serif;
-    --fontConteudo: 'Roboto', sans-serif;
 }
 
 /* --- Configurações Gerais --- */
@@ -42,7 +39,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.7);  /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
 }
 
@@ -71,12 +68,10 @@ body {
 
 #menu ul li a:hover {
     color: none;
-    /* Color da paleta de cores */
 }
 
 #inscricao #inscreva-se {
     padding: 12px 24px;
-    /* Background color da paleta de cores */
     color: black;
     font-weight: bold;
     border-radius: 6px;
@@ -87,11 +82,9 @@ body {
 
 #inscricao #inscreva-se:hover {
     color: none;
-    /* Background color da paleta de cores */
 }
 
 /* --- Configurações do Conteúdo Principal --- */
-
 
 /* Configuração da Apresentação */
 
@@ -100,12 +93,12 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-    padding: 80px 50px; /* Ajuste para não cobrir o cabeçalho */
+    padding: 80px 50px;
     background: url('img/4k-tech-2k2jzc0qemh7y38n.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--textosLeg);
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Efeito de sombra no texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 #container-conteudo #apresentacao #texto {
@@ -281,7 +274,6 @@ body {
     margin: 30px auto 0 auto;
 }
 
-/* Direitos autorais centralizados */
 #direitos-autorais {
     text-align: center;
     margin-top: 40px;
