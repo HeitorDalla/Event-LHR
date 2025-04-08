@@ -227,3 +227,64 @@ body {
     text-align: center;
     line-height: 1.4;
 }
+
+/* --- Configuração do Rodape --- */
+
+#container-rodape {
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+}
+
+#informacoesContato {
+    text-align: center;
+}
+
+.contatos-em-linha {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contato {
+    text-align: center;
+    max-width: 220px;
+}
+
+.contato p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.icones {
+    margin-top: 8px;
+}
+
+.icone {
+    font-size: 22px;
+    color: white;
+    margin: 0 6px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icone:hover {
+    color: var(--linkButton);
+    transform: scale(1.2);
+}
+
+.linha-central {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin: 30px auto 0 auto;
+}
+
+/* Direitos autorais centralizados */
+#direitos-autorais {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+}
