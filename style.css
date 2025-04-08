@@ -288,3 +288,50 @@ body {
     font-size: 14px;
     color: #aaa;
 }
+
+/* Configuração das Fontes ao longo do site */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#menu {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#inscreva-se {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.cardFilho h2, .cardFilho2 h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+}
+
+.cardFilho2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.contato p, .contato a {
+    font-family: 'Roboto', sans-serif;
+}
+
+#direitos-autorais {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
