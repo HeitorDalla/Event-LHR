@@ -7,7 +7,10 @@
     --barraNavegacao: #002F6C;
     --fundosSec: #4A646C;
     --textosLeg: #D9E0E2;
-    --linkButton: #FFC857; 
+    --linkButton: #FFC857;
+
+    --fontMenu: 'Barlow Condensed', sans-serif;
+    --fontConteudo: 'Roboto', sans-serif;
 }
 
 /* --- Configurações Gerais --- */
@@ -45,6 +48,7 @@ body {
 
 #menu {
     display: flex;
+    font-family: 'Barlow Condensed', sans-seri;
 }
 
 #menu ul {
@@ -88,6 +92,7 @@ body {
 
 /* --- Configurações do Conteúdo Principal --- */
 
+
 /* Configuração da Apresentação */
 
 #container-conteudo #apresentacao {
@@ -115,12 +120,33 @@ body {
 /* Configuração das Informações */
 
 #container-conteudo #informacoes {
-    height: 50vh;
-    background-color: var(--corFundos);
+    min-height: 60vh;
+    background-color: #1f1f1f;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    color: var(--textosLeg);
+    justify-content: center;
+    padding: 60px 80px;
+    gap: 60px;
+    color: #e0e0e0;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#container-conteudo #informacoes #logo img {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+}
+
+#container-conteudo #informacoes #texto {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #d0d0d0;
+    border: none;
+    background: none;
 }
 
 /* --- Configuração dos Palestrantes --- */
