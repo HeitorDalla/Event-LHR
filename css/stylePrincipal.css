@@ -98,7 +98,7 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     padding: 80px 50px;
-    background: url('img/4k-tech-2k2jzc0qemh7y38n.jpg') no-repeat center center;
+    background: url('/img/4k-tech-2k2jzc0qemh7y38n.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--textosLeg);
