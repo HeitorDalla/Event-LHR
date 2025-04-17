@@ -151,7 +151,7 @@ body {
 #container-conteudo #palestrantes {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; /* adicionado */
+    justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 60px 20px;
@@ -339,6 +339,7 @@ p {
 }
 
 /* --- Configuração do mapa --- */
+
 #mapa {
     width: 100%;
     height: 400px;
