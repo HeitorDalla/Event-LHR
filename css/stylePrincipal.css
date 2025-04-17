@@ -8,7 +8,7 @@
     --fundosSec: #334155;
     --textosLeg: #F1F5F9;
     --linkButton: #38BDF8;
-  }
+}
 
 /* --- Configurações Gerais --- */
 
@@ -34,59 +34,84 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 16px 40px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
     color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-#menu {
-    display: flex;
-    font-family: 'Barlow Condensed', sans-seri;
+#logo-site h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--linkButton);
+    margin: 0;
 }
 
 #menu ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
+    gap: 32px;
     padding: 0;
-}
-
-#menu ul li {
-    margin-right: 30px;
+    margin: 0;
 }
 
 #menu ul li a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f1f5f9;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+    padding: 6px 8px;
+    position: relative;
     transition: color 0.3s ease;
 }
 
+#menu ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--linkButton);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
 #menu ul li a:hover {
-    color: none;
+    color: var(--linkButton);
+}
+
+#menu ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 #inscricao #inscreva-se {
-    padding: 12px 24px;
+    background-color: var(--linkButton);
     color: #111;
-    font-weight: bold;
-    border-radius: 6px;
+    font-weight: 600;
+    padding: 10px 20px;
     border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: var(--linkButton);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 #inscricao #inscreva-se:hover {
     background-color: #fff;
     color: var(--barraNavegacao);
-    transform: scale(1.05);
+    transform: translateY(-2px) scale(1.05);
 }
+
 
 /* --- Configurações do Conteúdo Principal --- */
 
@@ -98,7 +123,7 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     padding: 80px 50px;
-    background: url('/img/4k-tech-2k2jzc0qemh7y38n.jpg') no-repeat center center;
+    background: url('/img/introducaoSite.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: var(--textosLeg);
@@ -117,33 +142,55 @@ body {
 /* Configuração das Informações */
 
 #container-conteudo #informacoes {
-    min-height: 60vh;
-    background-color: #1f1f1f;
+    min-height: 70vh;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 60px 80px;
+    padding: 80px 10%;
     gap: 60px;
-    color: #e0e0e0;
+    color: #f1f1f1;
     flex-wrap: wrap;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 #container-conteudo #informacoes #logo img {
-    width: 220px;
+    width: 240px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 16px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+#container-conteudo #informacoes #logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
 }
 
 #container-conteudo #informacoes #texto {
     max-width: 600px;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #d0d0d0;
-    border: none;
-    background: none;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #e0e0e0;
+    z-index: 2;
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+#container-conteudo #informacoes #texto:hover {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: inset 0 0 0 1px rgba(0, 255, 255, 0.2);
 }
 
 /* --- Configuração dos Palestrantes --- */
