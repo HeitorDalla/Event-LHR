@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Evento</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Para ícones -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto:wght@300;400;700&family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet"> <!-- Para fontes dentro do site -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> <!-- Para um mapa interativo -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> <!-- Para um mapa interativo -->
     <link rel="stylesheet" href="css/stylePrincipal.css">
 </head>
+
 <body>
     <!-- Seção do cabeçalho do site -->
 
@@ -40,13 +45,13 @@
 
         <section id="informacoes">
             <div id="logo">
-                <img src="img/gdbLogo.png" alt="Logo da empresa">
+                <img src="img/gdbLogo.png" alt="Logo GDG Londrina">
             </div>
             <div id="texto">
                 <p>O Evento Tech é um evento de tecnologia que reúne especialistas, empresas e entusiastas para explorar inovações como IA, blockchain e 5G. Com palestras, workshops, exposições de startups e hackathons, é uma oportunidade única de aprender, trocar ideias e fazer networking.</p>
             </div>
         </section>
-        
+
         <section id="palestrantes">
             <div class="palestrante">
                 <div class="cardPai">
@@ -74,7 +79,7 @@
                         <p>Resumo da palestra e tópicos importantes abordados.</p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section id="localizacao">
@@ -82,6 +87,25 @@
             <div id="mapa"> <!-- Localização em tempo real --> </div>
         </section>
     </main>
+
+    <!-- Seção para o formulário de inscrição -->
+
+    <section id="formulario-inscricao">
+        <h2>Inscreva-se no Evento</h2>
+        <form id="form-inscricao">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="telefone" placeholder="Telefone (opcional)">
+            <select name="area" required>
+                <option value="">Área de interesse</option>
+                <option>Desenvolvimento</option>
+                <option>IA / Machine Learning</option>
+                <option>Blockchain</option>
+                <option>Carreira Tech</option>
+            </select>
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
 
     <!-- Seção do conteudo dodapé do site -->
 
@@ -97,7 +121,7 @@
                         <a href="https://www.linkedin.com/in/heitordallavilla/" target="_blank"><i class="fa-brands fa-linkedin icone"></i></a>
                     </div>
                 </div>
-        
+
                 <div class="contato">
                     <p>rocoliveira@hotmail.com</p>
                     <p>Telefone: (43) 98862-6096</p>
@@ -106,7 +130,7 @@
                         <a href="https://www.linkedin.com/in/rodrigooliveiracruz/" target="_blank"><i class="fa-brands fa-linkedin icone"></i></a>
                     </div>
                 </div>
-        
+
                 <div class="contato">
                     <p>layon.a.silva@gmail.com</p>
                     <p>Telefone: (43) 99175-1627</p>
@@ -118,12 +142,13 @@
             </div>
             <div class="linha-central"></div>
         </section>
-      
+
         <section id="direitos-autorais">
-          <p>&copy; 2025. Todos os direitos reservados.</p>
+            <p>&copy; 2025. Todos os direitos reservados.</p>
         </section>
     </footer>
-    
+
     <script src="js/scriptPrincipal.js"></script>
 </body>
+
 </html>
