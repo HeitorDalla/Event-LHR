@@ -474,3 +474,23 @@ p {
         margin: 10px 0;
     }
 }
+
+.cardPai {
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+    position: relative;
+}
+
+.cardFilho,
+.cardFilho2 {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.cardFilho2 {
+    transform: rotateY(180deg);
+}
+
+.palestrante:hover .cardPai {
+    transform: rotateY(180deg);
+}
