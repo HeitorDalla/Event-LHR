@@ -73,8 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (formIsValid) {
-      alert("Inscrição enviada com sucesso!");
-      form.submit(); // ou use AJAX
+      if (formIsValid) {
+        alert("Inscrição enviada com sucesso!");
+        window.location.href = "#apresentacao";
+      }      
     }
   });
 
@@ -92,7 +94,6 @@ function regularExpressions() {
   return {
     letras: /^[a-zA-Z\s]+$/,
     email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-    telefone: /^(?:\(\d{2}\)\s?)?\d{4,5}-\d{4}$/,
     senha: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$/
   };
 }
@@ -148,7 +149,7 @@ function isValidTelephone(value) {
   if (isEmpty(value)) {
     validator.isValid = false;
     validator.errorMessage = "O telefone é obrigatório.";
-  } else if (!regularExpressions().telefone.test(value)) {
+  } else if (!/^(?:\(\d{2}\)\s?)?\d{4,5}-\d{4}$/.test(value)) {
     validator.isValid = false;
     validator.errorMessage = "Formato de telefone inválido. Ex: (43) 99999-9999";
   }
