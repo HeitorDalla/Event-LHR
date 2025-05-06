@@ -3,20 +3,16 @@
 const links = [...document.querySelectorAll(".link")];
 
 // Implementar o efeito de scroll-behavior nos links do menu
-document.addEventListener("DOMContentLoaded", (event) => {
-    event.preventDefault();
+links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
 
-    links.forEach((link) => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            const elementoAtributo = link.getAttribute("atribute");
-            const secaoLink = document.getElementById(elementoAtributo);
-            if (secaoLink) {
-                secaoLink.scrollIntoView({ behavior: 'smooth' });
-            }
-        })
-    });
+        const elementoAtributo = link.getAttribute("atribute");
+        const secaoLink = document.getElementById(elementoAtributo);
+        if (secaoLink) {
+            secaoLink.scrollIntoView({ behavior: 'smooth' });
+        }
+    })
 });
 
 // Mapa com localização do usuário
@@ -44,11 +40,11 @@ document.getElementById("form-inscricao").addEventListener("submit", (e) => {
     e.target.reset();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.getElementById("menu-toggle");
-    const menu = document.querySelector(".menu-links");
-
-    toggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
+    const menu = document.querySelector("ul.menu-links");
+  
+    toggle.addEventListener("click", function () {
+      menu.classList.toggle("active");
     });
-});
+  });
