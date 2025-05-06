@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto:wght@300;400;700&family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-2px);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007BFF;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 12px rgba(0, 91, 187, 0.3);
+}
+
+#mensagem {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#mensagem.sucesso {
+    color: #28a745;
+}
+
+#mensagem.erro {
+    color: #dc3545;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
