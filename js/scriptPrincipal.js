@@ -43,3 +43,12 @@ document.getElementById("form-inscricao").addEventListener("submit", (e) => {
     alert("Inscrição enviada com sucesso!");
     e.target.reset();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.querySelector(".menu-links");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
