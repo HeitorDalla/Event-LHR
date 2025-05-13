@@ -46,9 +46,10 @@ Esse projeto é um código aberto e todas as modificações são bem-vindas! Fiq
 ---
 
 ## Contato
-- Criado por Heitor Giussani Dalla Villa
-- E-mail: heitorvillavilla@gmail.com
-- Linkedin: https://www.linkedin.com/in/heitordallavilla
+- Criado por Heitor Giussani Dalla Villa, Rodrigo Oliveira, Layon Augusto
+- E-mail: heitorvillavilla@gmail.com, rocoliveira@hotmail.com, layon.a.silva@gmail.com
+
+- Linkedin: https://www.linkedin.com/in/heitordallavilla, https://www.linkedin.com/in/rodrigooliveiracruz/, https://www.linkedin.com/in/layonaugustosilva/
 
 ---
 
