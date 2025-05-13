@@ -2,14 +2,6 @@
 
 O **Event-LHR** é um site para promover um evento de tecnologia organizado pelo GDG Londrina, que inclui informações sobre palestras, localização do evento, palestrantes convidados, contatos e muito mais. A proposta é criar uma experiência moderna, acessível e interativa para os visitantes, usando recursos visuais, interações com JavaScript e um mapa em tempo real com Leaflet.js.
 
-## 🖼️ Capturas de Tela
-
-> Adicione imagens aqui mostrando:
-> - Página inicial
-> - Cards de palestrantes
-> - Mapa com localização
-> - Versão mobile do menu
-
 ---
 
 ## 🧩 Funcionalidades
@@ -43,5 +35,22 @@ Caso o usuário não permita a geolocalização, o mapa ainda mostra o local do 
 
 ---
 
-## 📁 Estrutura de Pastas
+## Pré-requisitos
+Não há pré-requisitos específicos para utilizar este gerador de senha.
 
+---
+
+## Contribuindo
+Esse projeto é um código aberto e todas as modificações são bem-vindas! Fique a vontade de ralatar bugs e propor melhorias!
+
+---
+
+## Contato
+- Criado por Heitor Giussani Dalla Villa
+- E-mail: heitorvillavilla@gmail.com
+- Linkedin: https://www.linkedin.com/in/heitordallavilla
+
+---
+
+## Observações Finais
+Nenhuma observação.
