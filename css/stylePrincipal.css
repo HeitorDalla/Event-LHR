@@ -494,3 +494,8 @@ p {
 .palestrante:hover .cardPai {
     transform: rotateY(180deg);
 }
+
+#inscreva-se {
+    text-decoration: none;
+    color: inherit;
+}
